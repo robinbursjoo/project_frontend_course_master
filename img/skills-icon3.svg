@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75" height="74" viewBox="0 0 75 74">
+  <g id="branding" transform="translate(-167 -4023.683)">
+    <g id="Rectangle_23" data-name="Rectangle 23" transform="translate(188 4044.683)" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+      <rect width="42" height="53" rx="4" stroke="none"/>
+      <rect x="1.5" y="1.5" width="39" height="50" rx="2.5" fill="none"/>
+    </g>
+    <g id="Rectangle_26" data-name="Rectangle 26" transform="translate(232 4051.683)" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+      <rect width="10" height="46" rx="4" stroke="none"/>
+      <rect x="1.5" y="1.5" width="7" height="43" rx="2.5" fill="none"/>
+    </g>
+    <g id="Rectangle_24" data-name="Rectangle 24" transform="translate(171 4073.683)" fill="#2d2d2d" stroke="#f2f2f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+      <rect width="46" height="21" rx="1" stroke="none"/>
+      <rect x="-1.5" y="-1.5" width="49" height="24" rx="2.5" fill="none"/>
+    </g>
+    <g id="Rectangle_25" data-name="Rectangle 25" transform="translate(167 4023.683)" fill="#2d2d2d" stroke="#f2f2f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+      <rect width="38" height="41" rx="4" stroke="none"/>
+      <rect x="1.5" y="1.5" width="35" height="38" rx="2.5" fill="none"/>
+    </g>
+    <g id="Rectangle_28" data-name="Rectangle 28" transform="translate(207 4026.683)" fill="#2d2d2d" stroke="#f2f2f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+      <rect width="23" height="15" rx="4" stroke="none"/>
+      <rect x="1.5" y="1.5" width="20" height="12" rx="2.5" fill="none"/>
+    </g>
+    <line id="Line_6" data-name="Line 6" x2="23.75" transform="translate(175.231 4038.865)" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-width="3"/>
+    <line id="Line_7" data-name="Line 7" x2="23.75" transform="translate(175.231 4044.711)" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-width="3"/>
+    <line id="Line_8" data-name="Line 8" x2="12.788" transform="translate(175.231 4050.558)" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-width="3"/>
+    <g id="Polygon_1" data-name="Polygon 1" transform="translate(235 4045.683)" fill="#2d2d2d" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M 5.869919776916504 10.5 L 4 10.5 L 0 10.5 L -1.869920015335083 10.5 L -1.464280009269714 8.674599647521973 L 0.5357199907302856 -0.3253999948501587 L 3.464279890060425 -0.3253999948501587 L 5.464280128479004 8.674599647521973 L 5.869919776916504 10.5 Z" stroke="none"/>
+      <path d="M 2 0 L 0 9 L 4 9 L 2 0 M 2 -3 C 3.406100034713745 -3 4.623539924621582 -2.02340030670166 4.928560256958008 -0.6507902145385742 L 6.928560256958008 8.349209785461426 C 7.125960350036621 9.237500190734863 6.909509658813477 10.16738033294678 6.340129852294922 10.8771800994873 C 5.770740032196045 11.58699035644531 4.90995979309082 12 4 12 L 0 12 C -0.9099597930908203 12 -1.770740032196045 11.58699035644531 -2.340129852294922 10.8771800994873 C -2.909510135650635 10.16738033294678 -3.125959873199463 9.237500190734863 -2.92855978012085 8.349209785461426 L -0.9285597801208496 -0.6507902145385742 C -0.623539924621582 -2.02340030670166 0.5938999652862549 -3 2 -3 Z" stroke="none" fill="#f2f2f2"/>
+    </g>
+    <g id="Rectangle_27" data-name="Rectangle 27" transform="translate(232 4087.683)" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+      <rect width="10" height="10" rx="4" stroke="none"/>
+      <rect x="1.5" y="1.5" width="7" height="7" rx="2.5" fill="none"/>
+    </g>
+    <g id="Polygon_2" data-name="Polygon 2" transform="translate(217 4085.683) rotate(180)" fill="#2d2d2d" stroke-linejoin="round">
+      <path d="M 46 13.5 L 1.9073486328125e-06 13.5 L -0.6938480734825134 10.67012023925781 L 22.30613136291504 -1.329879999160767 L 22.9999828338623 -1.691890001296997 L 23.69383239746094 -1.329879999160767 L 46.69385147094727 10.67012023925781 L 46 13.5 Z" stroke="none"/>
+      <path d="M 22.9999828338623 0 L 3.814697265625e-06 12 L 46 12 L 22.9999828338623 0 M 22.99999809265137 -3 C 23.47646713256836 -3 23.95292282104492 -2.886590003967285 24.38768196105957 -2.659760475158691 L 47.38770294189453 9.340240478515625 C 48.6126708984375 9.979360580444336 49.24272155761719 11.37246990203857 48.91370391845703 12.71440029144287 C 48.58467102050781 14.05632972717285 47.38168334960938 15 46 15 L 3.814697265625e-06 15 C -1.381679534912109 15 -2.584667205810547 14.05632972717285 -2.9136962890625 12.71440029144287 C -3.242717742919922 11.37246990203857 -2.612667083740234 9.979360580444336 -1.387699127197266 9.340250015258789 L 21.61228179931641 -2.659749984741211 C 22.04704284667969 -2.886580467224121 22.52352714538574 -3 22.99999809265137 -3 Z" stroke="none" fill="#f2f2f2"/>
+    </g>
+  </g>
+</svg>

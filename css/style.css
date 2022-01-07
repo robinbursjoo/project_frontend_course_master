@@ -1,3 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;700&display=swap');
+
+:root {
+    --primarycolor: #2D2D2D;
+    --secondarycolor: #F2F2F2;
+    --accentcolor: #218DCE;
+}
+
+p {
+    margin: 0;
+}
+
+
+
+/* UTILITIES */
+
 body {
     background-color: rgb(214, 214, 214);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mohave', 'Open Sans', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADLINES and text sizes */
+
+h1 {
+    font-size: 5rem;
+    color: var(--primarycolor);
+}
+
+/* Section headline */
+h2 {
+    margin-top: 10rem;
+    margin-bottom: 0;
+    font-size: 3.125rem;
+    color: var(--primarycolor);
+}
+
+/* Section sub headline */
+h3 {
+    margin: 0rem 0rem;
+    font-size: 2.125rem;
+    color: var(--primarycolor);
+}
+
+/* Category */
+h4 {
+    margin: 0rem;
+    font-size: 1.125rem;
+    color: var(--primarycolor);
+    opacity: .5;
+}
+
+h5 {
+    font-family: 'Open sans';
+    font-size: 1.125rem;
+    color: var(--secondarycolor);
+}
+
+p {
+    font-size: 1rem;
+    font-family: 'Open Sans';
+}
+
+
+/* HEADER/NAV */
+header {
+    min-height: 10vh;
+    background-color: var(--primarycolor);
+    display: flex;
+}
+
+.nav-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid;
+}
+
+.logo {
+    display: flex;
+    border: 1px solid white;
+    align-items: center;
+    gap: .5rem;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+
+.logo a {
+    color: white;
+}
+
+.logo img {
+    height: 1.8rem;
+}
+
+.site-nav a {
+    color: var(--secondarycolor);
+    text-transform: uppercase;
+    display: none;
+}
+
+/* HAMBURGER MENU */
+
+
+
+
+/* CENTER ALL SECTIONS */
+.hero, .featured, .portfolio, .skills, .about {
+    text-align: center;
+}
+
+/* HERO */
+
+.hero img {
+    width: 100%;
+}
+
+.hero h1 {
+    margin: 2rem 4rem;
+    line-height: .9;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin: 3rem 4rem;
+}
+
+.hero button {
+    background-color: var(--accentcolor);
+    color: var(--secondarycolor);
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: .25rem;
+    font-family: 'Mohave';
+    font-weight: medium;
+    font-size: 1.5rem;
+}
+/* FEATURED */
+
+.featured p {
+    padding: 2rem;
+}
+
+.featured img {
+    width: 100%;
+}
+
+/* CASES/PORTFOLIO */
+
+.case-container img {
+    width: 100%;
+}
+
+/* CASES OVERLAY */
+
+/* SKILLS */
+.skills {
+    margin: 6rem 0;
+}
+
+.skills-container {
+    background-color: var(--primarycolor);
+    padding: 2rem 5rem;
+    margin: 1.5rem 1rem;
+    border-radius: .5rem;
+}
+
+.skills-container p {
+    color: var(--secondarycolor);
+}
+
+/* ABOUT */
+
+.about p {
+    padding: 2rem;
+}
+
+.about img {
+    width: 100%;
+}
+
+/* CONTACT FORM */
+
+/* FOOTER */
+
+footer {
+    padding: 1rem 1rem;
+    background-color: var(--primarycolor);
+}
+
+footer h3 {
+    color: var(--secondarycolor);
+}
+
+footer p, a {
+    color: var(--secondarycolor);
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin: 0;
+    font-family: 'Open sans';
+    padding: .25rem 0rem;
+}
+
+footer .copy p {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+footer img {
+    width: 2rem;
+}
+
+/* MEDIA RESPONSIVE */

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="68.683" viewBox="0 0 76 68.683">
+  <g id="uicpu" transform="translate(-165 -4028.683)">
+    <g id="Rectangle_23" data-name="Rectangle 23" transform="translate(165 4028.683)" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+      <rect width="76" height="59" rx="10" stroke="none"/>
+      <rect x="1.5" y="1.5" width="73" height="56" rx="8.5" fill="none"/>
+    </g>
+    <g id="Rectangle_24" data-name="Rectangle 24" transform="translate(177 4058.683)" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+      <rect width="21" height="13" rx="5" stroke="none"/>
+      <rect x="-1.5" y="-1.5" width="24" height="16" rx="6.5" fill="none"/>
+    </g>
+    <g id="Rectangle_25" data-name="Rectangle 25" transform="translate(206 4036.683)" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+      <rect width="28" height="21" rx="10" stroke="none"/>
+      <rect x="1.5" y="1.5" width="25" height="18" rx="8.5" fill="none"/>
+    </g>
+    <line id="Line_4" data-name="Line 4" y2="9.5" transform="translate(203.365 4086.365)" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-width="3"/>
+    <line id="Line_5" data-name="Line 5" x2="55.538" transform="translate(175.596 4095.865)" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-width="3"/>
+    <line id="Line_9" data-name="Line 9" x2="72" transform="translate(167 4078.683)" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-width="3"/>
+    <line id="Line_6" data-name="Line 6" x2="23.75" transform="translate(175.231 4038.865)" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-width="3"/>
+    <line id="Line_7" data-name="Line 7" x2="23.75" transform="translate(175.231 4044.711)" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-width="3"/>
+    <line id="Line_8" data-name="Line 8" x2="12.788" transform="translate(175.231 4050.558)" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-width="3"/>
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(221 4061.683)" fill="none" stroke="#f2f2f2" stroke-width="3">
+      <circle cx="5.5" cy="5.5" r="5.5" stroke="none"/>
+      <circle cx="5.5" cy="5.5" r="4" fill="none"/>
+    </g>
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(207 4061.683)" fill="none" stroke="#f2f2f2" stroke-width="3">
+      <circle cx="5.5" cy="5.5" r="5.5" stroke="none"/>
+      <circle cx="5.5" cy="5.5" r="4" fill="none"/>
+    </g>
+  </g>
+</svg>

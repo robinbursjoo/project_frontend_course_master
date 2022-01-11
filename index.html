@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script>src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/app.js" defer></script>
 </head>
 
 <body>
@@ -18,11 +19,14 @@
                 <a href="index.html">CAGELAKEISLAND</a>
             </div>
 
-            <nav class="site-nav">
-                <ul>
+            <button class="mobile-nav-toggle" aria-controls="site-nav" aria-expanded="false"></button>
+
+            <nav>
+                <ul class="site-nav" data-visible="false">
+                    <li><a href="index.html">home</a></li>
                     <li><a href="#">cases</a></li>
                     <li><a href="#">about</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="contact.html">contact</a></li>
                 </ul>
             </nav>
 
@@ -35,7 +39,7 @@
         <h1>Hi there!</h1>
         <p class="herop">CAGELAKEISLAND is a web design studio focused on 3D illustration, UI design and branding.</p>
         <button class="hero-cta">Take the tour!</button>
-        <img src="img/hero-img.png" alt="hero image">
+       <!-- <img src="img/hero-img.png" alt="hero image">  -->
     </section>
 
     <section class="featured">
@@ -47,32 +51,54 @@
         <img src="img/project-4.jpg" alt="featured project">
     </section>
 
+    <hr class="center-diamond">
+
     <section class="portfolio">
         <h2>Cases</h2>
         <div class="container-portfolio">
             <div class="case-container">
-                <img src="img/project-1.png" alt="">
-                <h5>Name</h5>
-                <h6>Category</h6>
-                <p>Hover text</p>
+                <a href="#">
+                    <img src="img/project-1.png" alt="">
+                </a>
+                <div class="topleft">Top Left</div>
+                <div class="overlay-container">
+                    <h5>Name</h5>
+                    <h6>Category</h6>
+                    <p>Hover text</p>
+                </div>
             </div>
             <div class="case-container">
-                <img src="img/project-2.jpg" alt="">
-                <h5>Name</h5>
-                <h6>Category</h6>
-                <p>Hover text</p>
+                <a href="#">
+                    <img src="img/project-2.jpg" alt="">
+                </a>
+                <div class="topleft">Top Left</div>
+                <div class="overlay-container">
+                    <h5>Name</h5>
+                    <h6>Category</h6>
+                    <p>Hover text</p>
+                </div>
             </div>
             <div class="case-container">
-                <img src="img/project-3.png" alt="">
-                <h5>Name</h5>
-                <h6>Category</h6>
-                <p>Hover text</p>
+                <a href="#">
+                    <img src="img/project-3.png" alt="">
+                </a>
+                <div class="topleft">Top Left</div>
+                <div class="overlay-container">
+                    <h5>Name</h5>
+                    <h6>Category</h6>
+                    <p>Hover text</p>
+                </div>
             </div>
             <div class="case-container">
-                <img src="img/project-4.jpg" alt="">
-                <h5>Name</h5>
-                <h6>Category</h6>
-                <p>Hover text</p>
+                <a href="project-1.html">
+                    <img src="img/project-4.jpg" alt="">
+                </a>
+                <div class="topleft">Top Left</div>
+                <div class="overlay-container">
+                    <h5>Name</h5>
+                    <h6>Category</h6>
+                    <p>Hover text</p>
+                </div>
             </div>
         </div>
     </section>

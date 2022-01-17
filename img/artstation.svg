@@ -1,1 +1,11 @@
-<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="artstation" class="svg-inline--fa fa-artstation" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M2 377.4l43 74.3A51.35 51.35 0 0 0 90.9 480h285.4l-59.2-102.6zM501.8 350L335.6 59.3A51.38 51.38 0 0 0 290.2 32h-88.4l257.3 447.6 40.7-70.5c1.9-3.2 21-29.7 2-59.1zM275 304.5l-115.5-200L44 304.5z"></path></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Lager_1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<path class="st0" d="M2,377.4l43,74.3c8.7,17.4,26.5,28.3,45.9,28.3h285.4l-59.2-102.6H2z M501.8,350L335.6,59.3
+	C326.7,42.5,309.2,32,290.2,32h-88.4l257.3,447.6l40.7-70.5C501.7,405.9,520.8,379.4,501.8,350L501.8,350z M275,304.5l-115.5-200
+	L44,304.5H275z"/>
+</svg>

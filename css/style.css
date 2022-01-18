@@ -5,6 +5,7 @@
     --primarycolor: #2D2D2D;
     --secondarycolor: #F2F2F2;
     --accentcolor: #218DCE;
+    --backgroundcolor: rgb(214, 214, 214);
     --boxshadow: 0 .2em .5em hsl(0 0% 0% / 0.4);
     --borderradius: .55rem;
     --fontwstandard: 400;
@@ -103,7 +104,7 @@ select {
   }
 
 body {
-    background-color: rgb(214, 214, 214);
+    background-color: var(--backgroundcolor);
     font-family: 'Mohave', 'Open Sans', sans-serif;
     overflow-x: hidden;
 }
@@ -122,7 +123,7 @@ body {
 h1 {
     margin: 0;
     font-size: 5rem;
-    color: var(--primarycolor);
+    color: var(--secondarycolor);
 }
 
 /* Section headline */
@@ -158,6 +159,7 @@ h5 {
 p {
     font-size: 1rem;
     font-family: 'Open Sans';
+    max-width: 25rem;
 }
 
 
@@ -171,7 +173,7 @@ header {
 .nav-container {
     display: flex;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1500px;
     margin-inline: auto;
     justify-content: space-between;
     align-items: center;
@@ -275,6 +277,10 @@ header {
         border-bottom: 1px solid hsl(0 0% 100% / 0.1);
     }
 
+    .site-nav a::before {
+        display: none;
+    }
+
     .mobile-nav-toggle {
         display: block;
         position: fixed;
@@ -283,7 +289,7 @@ header {
         box-shadow: var(--boxshadow);
         border: 0;
         border-radius: .25rem;
-        background-image: url(/img/menu.svg);
+        background-image: url("../img/menu.svg");
         background-position: center;
         background-size: 2rem;
         background-repeat: no-repeat;
@@ -294,12 +300,9 @@ header {
     }
 
     .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url(/img/cross.svg);
+        background-image: url("../img/cross.svg");
     }
 }
-
-
-
 
 
 /* CENTER ALL SECTIONS */
@@ -310,21 +313,14 @@ header {
 /* HERO */
 
 #hero {
-    background: url(/img/hero-img.jpg) no-repeat center;
+    background: url("../img/hero-img-blurbw.jpg") no-repeat center;
     background-size: cover;
     /* background-position-y: 280px; */
     max-width: 100%;
-    height: 100vh;
+    height: 90vh;
     /* margin-bottom: -20rem; */
 }
 
-/* .hero img {
-    width: 100%;
-    margin: -1rem;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-} */
 
 #hero h1 {
     padding: 10rem 4rem 2rem 4rem;
@@ -334,6 +330,7 @@ header {
 #hero p {
     font-size: 1.1rem;
     margin: 3rem 4rem;
+    color: white;
 }
 
 .hero-cta {
@@ -365,21 +362,11 @@ header {
 
 #featured p {
     padding: 2rem;
+    margin-inline: auto;
 }
 
 #featured img {
     width: 100%;
-}
-
-/* Line styling */
-
-hr {
-    margin-block: 5rem;
-    width: 70%;
-    max-width: 1200px;
-    height: 1px;
-    border: 0;
-    background: rgb(0 0 0 / 0.1);
 }
 
 
@@ -407,12 +394,12 @@ hr {
     font-size: 2.25rem;
     text-transform: uppercase;
     color: black;
-    text-shadow: 0px 1px 2px hsl(0 0% 100% / 0.6);
+    text-shadow: 0px 1px 1px hsl(0 0% 100% / 0.6);
 }
 
 .topleft-white {
     color: white;
-    text-shadow: 0px 1px 2px hsl(0 0% 0% / 0.6);
+    text-shadow: 0px 1px 1px hsl(0 0% 0% / 0.6);
 }
 
 .case-container img {
@@ -437,18 +424,21 @@ hr {
 }
 
 /* CASES DETAILS */
-
-.details {
-    background-color: var(--secondarycolor);
-}
-
-.details p {
-    padding: 2rem;
+.wrapper-details {
     text-align: center;
+    background-color: var(--backgroundcolor);
+    max-width: 1500px;
+    margin-inline: auto;
 }
 
-.details img {
+#details p {
+    padding: 4rem 2rem 1rem 2rem;
+    margin-inline: auto;
+}
+
+#details img {
     width: 100%;
+    aspect-ratio: 1 / 1;
 }
 
 /* SKILLS */
@@ -561,6 +551,8 @@ footer .copy p {
     text-align: center;
     margin-top: 2rem;
     justify-content: center;
+    margin-inline: auto;
+    max-width: 30rem;
 }
 
 footer img {
@@ -568,8 +560,29 @@ footer img {
 }
 
 /* MEDIA RESPONSIVE */
-/* 
+
+/* Tablets portrait */
 @media (min-width: 670px) {
+    header {
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+        margin-inline: auto;
+        width: 100%;
+    }
+
+    #hero {
+        height: 100vh;
+    }
+
+    #hero p {
+        margin-inline: auto;
+    }
+
+    #hero, #portfolio, #about, #details {
+        padding-top: 10vh;
+    }
+/* 
 
     section, .skills {
         margin-inline: auto;
@@ -586,38 +599,52 @@ footer img {
 
     .featured-right img {
         border-radius: var(--borderradius);
-    }
-} */
+    } */
+}
 
 /* Small screens/laptops */
-@media (min-width: 769px) {
-    .wrapper, #portfolio, .wrapper-skills, #about, .wrapper-footer {
+@media (min-width: 850px) {
+
+    #skills,
+    #portfolio,
+    .wrapper,
+    .wrapper-skills,
+    .wrapper-footer,
+    .wrapper-details,
+    #about {
         margin-inline: auto;
     }
 
-    .wrapper {
+    /* Split view for featured and details */
+    .wrapper, .wrapper-details {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
         align-content: center;
         gap: 2rem;
         padding: 10rem 2rem;
         align-items: center;
     }
 
+/* Grid for detail images */
+    .wrapper-details:last-child {
+        grid-template-columns: 1fr 1fr;
+    }
+
     h2 {
         margin: 0;
     }
 
-    .featured-left {
+    .featured-left, .details-left {
         text-align: left;
         align-self: center;
     }
 
-    #featured p {
+    #featured p, #details p {
         padding: 0;
+
     }
 
-    #featured img {
+    #featured img, #details img {
         border-radius: var(--borderradius);
         object-fit: cover;
     }
@@ -690,26 +717,20 @@ footer img {
 
 /* Desktop */
 @media (min-width: 1025px) {
-    .wrapper, #skills, .wrapper-skills #portfolio, #about {
-        margin-inline: auto;
-        /* background-color: rgb(214, 214, 214); */
-    }
-
     #featured {
         background-color: white;
     }
 
-    .featured-left {
-        max-width: 80%;
-    }
-}
-/* LARGE */
-@media (min-width: 1680px) {
-    .featured-left {
-        max-width: 50%;
+    .featured-left, .details-left {
+        margin-inline: auto;
     }
 
     #about p {
-        max-width: 70%;
+        margin-inline: auto;
     }
+}
+
+/* LARGE */
+@media (min-width: 1680px) {
+    
 }

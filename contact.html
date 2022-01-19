@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAGELAKEISLAND</title>
     <link rel="stylesheet" href="css/style.css">
-    <script>src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"</script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/app.js" defer></script>
+
 </head>
 
 <body>
@@ -34,32 +32,34 @@
     </header>
 
     <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-left">
-                <h2>Work with me!</h2>
-                <p>For inquiries or collaborations please contact me by email at: <br>
-                    <span class="bold">robin.bursjoo@gmail.com</span><br>
-                     or fill out this wonderful form</p>
-                <form action="">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name">
-
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-
-                    <input type="submit" class="send-message-cta" value="Send message">
-                </form>
-            </div>
-
-            <div class="contact-right">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2131.770104016089!2d11.991455316117538!3d57.70337554734365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff38260787741%3A0x5c897246115bca16!2sV%C3%A4dursgatan%2021%2C%20412%2050%20G%C3%B6teborg!5e0!3m2!1ssv!2sse!4v1616503836979!5m2!1ssv!2sse"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+        <div class="contact-left">
+            <h2>Work with me!</h2>
+            <p>For inquiries or collaborations please contact me by email at: <br>
+                <span class="bold">robin.bursjoo@gmail.com</span><br>
+                    or fill out this wonderful form <br><br><span class="required">*</span> is required.
+            </p>
         </div>
+
+        <div class="contact-right">
+            <div id="messages"></div>
+
+            <form action="mailto:robin.bursjoo@gmail.com" method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
+                <label for="inputEmail" class="form-label">Email <span class="required">*</span></label>
+                <input type="email" name="email" id="input-email">
+                
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea name="message" id="input-message" cols="30" rows="10"></textarea>
+
+                <input type="submit" class="send-message-cta" value="Send message">
+            </form>
+        </div>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2131.770104016089!2d11.991455316117538!3d57.70337554734365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff38260787741%3A0x5c897246115bca16!2sV%C3%A4dursgatan%2021%2C%20412%2050%20G%C3%B6teborg!5e0!3m2!1ssv!2sse!4v1616503836979!5m2!1ssv!2sse"
+            width="600" height="3000" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
     <footer>
@@ -98,5 +98,10 @@
         </div>
         </footer>
 
-</body> 
+</body>
+
+<script>src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/app.js" defer></script>
+
 </html>

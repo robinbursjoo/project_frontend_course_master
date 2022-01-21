@@ -431,6 +431,7 @@ p {
     transition-duration: 0.3s;
     cursor: pointer;
 }
+
 /* .button-nxtprv:last-of-type {
     background-image: url(/img/chevron-right-solid.svg);
     background-position: 95%;
@@ -902,16 +903,12 @@ footer img {
     }
 
 
-
-
-
-
     /* Modal background */
     .modal {
         display: none;
         position: fixed;
         z-index: 1000000;
-        padding-top: 5vh;
+        padding: 5vh;
         left: 0;
         top: 0;
         width: 100%;
@@ -924,12 +921,15 @@ footer img {
       
       /* Modal Content */
       .modal-content {
-        position: relative;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         background-color: #fefefe;
-        margin: auto;
+        margin: 0 auto;
         padding: 0;
-        max-width: 90vh;
-      }
+        min-width: 1000px;
+    }
 
       #details img {
           cursor: pointer;

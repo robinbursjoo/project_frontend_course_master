@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAGELAKEISLAND - Space Station</title>
     <link rel="stylesheet" href="css/style.css">
-    <script>src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"</script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/app.js" defer></script>
 </head>
 
 <body>
@@ -34,6 +31,10 @@
     </header>
 
     <section id="details">
+        <div class="wrapper-nxtprv">
+            <button class="button-nxtprv"><a href="project-5.html">&#10094; previous</a></button>
+            <button class="button-nxtprv"><a href="project-1.html">next &#10095;</a></button>
+        </div>
         <div class="wrapper-details">
             <div class="details-left">
                 <h2>Case breakdown</h2>
@@ -42,18 +43,63 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident corporis, expedita sed placeat aut dignissimos? Alias cum nulla soluta iste mollitia odit, animi rem fuga! Consequuntur doloremque..</p>
             </div>
             <div class="details-right">
-                <img src="img/project-6.jpg" alt="Space Station">
+                <img src="img/project-6.jpg" alt="Space Station" onclick="openModal();currentSlide(1)" class="hover-shadow">
             </div>
         </div>
 
         <div class="wrapper-details">
-            <img src="img/extras/project-6-details1.png" alt="">
-            <img src="img/extras/project-6-details2.png" alt="">
-            <img src="img/extras/project-6-details3.png" alt="">
-            <img src="img/extras/project-6-details4.png" alt="">
-            <img src="img/extras/project-6-details5.jpg" alt="">
+            <img src="img/extras/project-6-details1.png" alt="" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            <img src="img/extras/project-6-details2.png" alt="" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            <img src="img/extras/project-6-details3.png" alt="" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            <img src="img/extras/project-6-details4.png" alt="" onclick="openModal();currentSlide(5)" class="hover-shadow">
+            <img src="img/extras/project-6-details5.jpg" alt="" onclick="openModal();currentSlide(6)" class="hover-shadow grid-span2">
+        </div>
+        <div class="wrapper-nxtprv">
+            <button class="button-nxtprv"><a href="project-5.html">&#10094; previous</a></button>
+            <button class="button-nxtprv"><a href="project-1.html">next &#10095;</a></button>
         </div>
     </section>
+
+    <!-- Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="./img/project-6.jpg" style="width:100%">
+            </div>
+    
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="./img/extras/project-6-details1.png" style="width:100%">
+            </div>
+    
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="./img/extras/project-6-details2.png" style="width:100%">
+            </div>
+    
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="./img/extras/project-6-details3.png" style="width:100%">
+            </div>
+    
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="./img/extras/project-6-details4.png" style="width:100%">
+            </div>
+    
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="./img/extras/project-6-details5.jpg" style="width:100%">
+            </div>
+    
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        </div>
+    </div>
 
     <footer>
         <div class="wrapper-footer">
@@ -88,7 +134,12 @@
                 <p>All content and images Copyright &copy; <span class="current-year">2022</span> Robin Bursjöö.</p>
             </div>
         </div>
-        </footer>
+    </footer>
 
 </body>
+
+<script>src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/app.js" defer></script>
+
 </html>

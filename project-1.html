@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAGELAKEISLAND - Stylized airplane</title>
     <link rel="stylesheet" href="css/style.css">
-    <script>src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"</script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/app.js" defer></script>
 </head>
 
 <body>
@@ -34,6 +31,10 @@
     </header>
 
     <section id="details">
+        <div class="wrapper-nxtprv">
+            <button class="button-nxtprv"><a href="project-6.html">&#10094; previous</a></button>
+            <button class="button-nxtprv"><a href="project-2.html">next &#10095;</a></button>
+        </div>
         <div class="wrapper-details">
             <div class="details-left">
                 <h2>Case breakdown</h2>
@@ -52,43 +53,48 @@
             <img src="img/extras/project-1-details3.png" alt="" onclick="openModal();currentSlide(4)" class="hover-shadow">
             <img src="img/extras/project-1-details4.png" alt="" onclick="openModal();currentSlide(5)" class="hover-shadow">
         </div>
+        <div class="wrapper-nxtprv">
+            <button class="button-nxtprv"><a href="project-6.html">&#10094; previous</a></button>
+            <button class="button-nxtprv"><a href="project-2.html">next &#10095;</a></button>
+        </div>
+
     </section>
 
     <!-- Modal/Lightbox -->
-<div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-    <div class="modal-content">
-        <div class="mySlides">
-            <div class="numbertext">1 / 5</div>
-            <img src="./img/project-1.jpg" style="width:100%">
-          </div>
-
-      <div class="mySlides">
-        <div class="numbertext">2 / 5</div>
-        <img src="./img/extras/project-1-details1.png" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">3 / 5</div>
-        <img src="./img/extras/project-1-details2.png" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">4 / 5</div>
-        <img src="./img/extras/project-1-details3.png" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">5 / 5</div>
-        <img src="./img/extras/project-1-details4.png" style="width:100%">
-      </div>
-  
-      <!-- Next/previous controls -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides">
+                <div class="numbertext">1 / 5</div>
+                <img src="./img/project-1.jpg" style="width:100%">
+            </div>
+    
+            <div class="mySlides">
+                <div class="numbertext">2 / 5</div>
+                <img src="./img/extras/project-1-details1.png" style="width:100%">
+            </div>
+    
+            <div class="mySlides">
+                <div class="numbertext">3 / 5</div>
+                <img src="./img/extras/project-1-details2.png" style="width:100%">
+            </div>
+    
+            <div class="mySlides">
+                <div class="numbertext">4 / 5</div>
+                <img src="./img/extras/project-1-details3.png" style="width:100%">
+            </div>
+    
+            <div class="mySlides">
+                <div class="numbertext">5 / 5</div>
+                <img src="./img/extras/project-1-details4.png" style="width:100%">
+            </div>
+    
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        </div>
     </div>
-  </div>
 
     <footer>
         <div class="wrapper-footer">
@@ -123,7 +129,12 @@
                 <p>All content and images Copyright &copy; <span class="current-year">2022</span> Robin Bursjöö.</p>
             </div>
         </div>
-        </footer>
+    </footer>
 
 </body>
+
+<script>src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/app.js" defer></script>
+
 </html>

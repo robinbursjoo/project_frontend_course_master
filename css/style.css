@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
 
 :root {
     --primarycolor: #2D2D2D;
@@ -121,7 +122,7 @@ select {
 
 body {
     background-color: var(--backgroundcolor);
-    font-family: 'Mohave', 'Open Sans', sans-serif;
+    font-family: 'Public sans', 'Mohave', 'Open Sans', sans-serif;
     overflow-x: hidden;
 }
 
@@ -147,16 +148,20 @@ body {
 
 h1 {
     margin: 0;
+    font-family: 'Mohave';
     font-size: clamp(5rem, 10vw, 20rem);
     color: var(--secondarycolor);
-    padding: 0 4rem;
+    padding: 0 2rem;
     line-height: .9;
+    text-shadow: 0px 2px 5px hsl(0 0% 0% / 0.3);
+
 }
 
 /* Section headline */
 h2 {
     margin-top: 5rem;
     margin-bottom: 0;
+    font-family: 'Mohave';
     font-size: clamp(3.25rem, 5vw, 6rem);
     line-height: .9;
     font-weight: var(--fontwstandard);
@@ -166,6 +171,7 @@ h2 {
 /* Section sub headline */
 h3 {
     margin: 0rem 0rem;
+    font-family: 'Mohave';
     font-size: clamp(2.125rem, 3vw, 3rem);
     color: var(--primarycolor);
 }
@@ -173,14 +179,16 @@ h3 {
 /* Category */
 h4 {
     margin: 0rem;
+    font-family: 'Mohave';
     /* font-size: 1.125rem; */
     font-size: clamp(1.125rem, 1.7vw, 1.25rem);
     color: var(--primarycolor);
     opacity: .5;
 }
 
+/* Skills headline */
 h5 {
-    font-family: 'Open sans';
+    font-family: 'Public sans';
     font-size: 1.125rem;
     color: var(--secondarycolor);
 }
@@ -188,7 +196,8 @@ h5 {
 p {
     /* font-size: 1rem; */
     font-size: clamp(1rem, 1vw, 1.125rem);
-    font-family: 'Open Sans';
+    font-family: 'Public Sans';
+    line-height: 1.5;
     max-width: 25rem;
 }
 
@@ -222,7 +231,7 @@ header {
     display: flex;
     align-items: center;
     gap: .5rem;
-    font-family: 'Open Sans';
+    font-family: 'Public Sans';
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
@@ -296,10 +305,10 @@ header {
         transform: translateX(0%);
     }
 
-    @supports (backdrop-filter: blur(4rem)) {
+    @supports (backdrop-filter: blur(1rem)) {
         .site-nav {
             background: hsl(0 0% 0% / 0.6);
-            backdrop-filter: blur(4rem);
+            backdrop-filter: blur(1rem);
         }
     }
 
@@ -358,12 +367,10 @@ p {
 ----------*/
 
 #hero {
-    background: url("../img/hero-img-blurbw.jpg") no-repeat center;
+    background: url("../img/hero-img-blur.jpg") no-repeat center;
     background-size: cover;
-    /* background-position-y: 280px; */
     max-width: 100%;
     height: 90vh;
-    /* margin-bottom: -20rem; */
 }
 
 .wrapper-hero {
@@ -374,36 +381,36 @@ p {
 }
 
 .herop {
-    /* font-size: 1.1rem; */
-    font-size: clamp(1.1rem, 2vw, 1.3rem);
     padding: 2rem 2rem;
-    color: white;
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    font-weight: var(--fontwbold);
+    line-height: 1.6;
+    color: var(--secondarycolor);
+    text-shadow: 0px 2px 5px hsl(0 0% 0% / 0.3);
+    /* display: none; */
 }
 
 .hero-cta {
-    position: relative;
+    position: absolute;
     z-index: 2;
-    background-color: var(--accentcolor);
-    color: var(--secondarycolor);
-    padding: 1rem 2rem;
+    left: 2%;
+    bottom: 2%;
+    background-color: hsl(0 0% 0% / 0);
+    color: hsl(0 0% 100% / 0.5);
     border: 0;
-    border-radius: var(--borderradius);
     font-family: 'Mohave';
     font-weight: var(--fontwstandard);
-    font-size: 1.5rem;
-    transition-duration: 0.4s;
-    cursor: pointer;
+    animation: bounce 0.8s infinite alternate;
 }
 
-@media (hover: hover) {
-    .hero-cta:hover {
-        background-color: var(--secondarycolor);
-        color: var(--primarycolor);
-    }
-    .button-nxtprv:hover {
-        background-color: var(--primarycolor);
-        color: var(--secondarycolor);
-    }
+@keyframes bounce {
+    from {transform: translateY(0px);}
+    to {transform: translateY(-.5rem);}
+}
+
+.hero-cta img {
+    max-width: 1rem;
+    opacity: .5;
 }
 
 /* Buttons for next and prev */
@@ -422,7 +429,7 @@ p {
     background-position: 5%;
     background-size: .75rem;
     background-repeat: no-repeat; */
-
+    
     color: var(--primarycolor);
     padding: .125rem 1rem;
     border: 1px solid #c4c4c4;
@@ -440,6 +447,12 @@ p {
     color: inherit;
 }
 
+@media (hover: hover) {
+    .button-nxtprv:hover {
+        background-color: var(--primarycolor);
+        color: var(--secondarycolor);
+    }
+}
 
 /*------------
 ---FEATURED---
@@ -487,6 +500,7 @@ p {
     top: 1rem;
     left: 1rem;
     z-index: 10;
+    font-family: 'Mohave';
     font-size: 2.25rem;
     text-transform: uppercase;
     color: black;
@@ -513,11 +527,31 @@ p {
 
 /* CASES OVERLAY */
 .overlay-container {
-    display: none;
     position: absolute;
-    text-align: center;
-    top: 0rem;
-    left: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(0 0% 0% / 0.4);
+    border-radius: var(--borderradius);
+    transition: 200ms ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.overlay-container p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: var(--accentcolor);
+    padding: 1em 2em;
+    border-radius: var(--borderradius);
+}
+
+.case-container:hover .overlay-container {
+    opacity: 1;
 }
 
 /* CASES DETAILS */
@@ -530,6 +564,14 @@ p {
 
 #details p {
     padding: 4rem 2rem 1rem 2rem;
+}
+
+#details video {
+    object-fit: cover;
+    /* height: 100%; */
+    width: 100%;
+    pointer-events: none;
+    border-radius: var(--borderradius);
 }
 
 /* Disable modal in mobile */
@@ -610,7 +652,7 @@ input, textarea {
 width: 70%;
 resize: none;
 padding: .8em;
-font-family: 'Open sans';
+font-family: 'Public sans';
 margin-bottom: 1em;
 border-radius: .25rem;
 border: 1px solid #c4c4c4;
@@ -631,22 +673,21 @@ font-size: 1.25rem;
 }
 
 iframe {
-/* display: none; */
 width: 100%;
-max-height: 300px;
+max-height: 20rem;
 }
 
 .required {
     color: red;
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 
 #messages {
     width: 70%;
     border-radius: var(--borderradius);
-    margin: 0 auto;
+    margin: 1rem auto;
     padding: 1rem 2rem;
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 
 
@@ -677,7 +718,7 @@ footer p, footer a {
     align-items: center;
     gap: .5rem;
     margin: 0;
-    font-family: 'Open sans';
+    font-family: 'Public sans';
     padding: .25rem 0rem;
 }
 
@@ -717,16 +758,16 @@ footer img {
     #hero {
         height: 100vh;
     }
-
-    #hero, #portfolio, #about, #details, #contact {
-        padding-top: 10vh;
-    }
-    
+ 
     .container-portfolio {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
         margin-top: 2rem;
+    }
+
+    #contact {
+        padding-top: 10vh;
     }
 }
 
@@ -734,6 +775,10 @@ footer img {
 /* Small screens/laptops */
 
 @media (min-width: 850px) {
+    html {
+        scroll-padding: 9vh;
+    }
+    
     img.hover-shadow {
         transition: 0.2s;
     }
@@ -754,6 +799,7 @@ footer img {
 
     .wrapper-nxtprv {
         padding: 2rem;
+        padding-top: 16vh;
     }
 
     /* Split view for featured and details */
@@ -763,7 +809,6 @@ footer img {
         align-content: center;
         gap: 2rem;
         padding: 0 2rem;
-        /* align-items: center; */
     }
 
     .wrapper {
@@ -818,7 +863,7 @@ footer img {
     }
 
     .skills-container {
-        padding: 1.25rem;
+        padding: 3rem;
         margin: 0;
     }
 
@@ -846,6 +891,7 @@ footer img {
     .wrapper-footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        padding: 0;
     }
 
     footer > * {
@@ -861,7 +907,6 @@ footer img {
         grid-template-columns: 1fr 1fr;
         /* align-items: center; */
         max-width: 1200px;
-        margin-block: 10rem;
         padding-inline: 2rem;
     }
 
@@ -894,6 +939,11 @@ footer img {
         background-color: white;
     }
 
+    .wrapper {
+        margin-block: auto;
+        height: 100vh;
+    }
+
     #about p {
         margin-inline: auto;
     }
@@ -901,7 +951,6 @@ footer img {
     #details img {
         pointer-events: auto;
     }
-
 
     /* Modal background */
     .modal {
@@ -928,7 +977,7 @@ footer img {
         background-color: #fefefe;
         margin: 0 auto;
         padding: 0;
-        min-width: 1000px;
+        min-width: 600px;
     }
 
       #details img {

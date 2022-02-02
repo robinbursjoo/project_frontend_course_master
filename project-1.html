@@ -21,7 +21,7 @@
             <nav>
                 <ul class="site-nav" data-visible="false">
                     <li><a href="index.html">home</a></li>
-                    <li><a href="index.html#portfolio">cases</a></li>
+                    <li><a href="index.html#featured">cases</a></li>
                     <li><a href="index.html#about">about</a></li>
                     <li><a href="contact.html">contact</a></li>
                 </ul>
@@ -43,58 +43,57 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident corporis, expedita sed placeat aut dignissimos? Alias cum nulla soluta iste mollitia odit, animi rem fuga! Consequuntur doloremque..</p>
             </div>
             <div class="details-right">
-                <img src="img/project-1.jpg" alt="Stylized plane" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                <img src="img/project-1.jpg" onclick="openModal();currentSlide(1)" alt="Stylized plane" class="hover-shadow">
             </div>
         </div>
 
         <div class="wrapper-details">
-            <img src="img/extras/project-1-details1.png" alt="" onclick="openModal();currentSlide(2)" class="hover-shadow">
-            <img src="img/extras/project-1-details2.png" alt="" onclick="openModal();currentSlide(3)" class="hover-shadow">
-            <img src="img/extras/project-1-details3.png" alt="" onclick="openModal();currentSlide(4)" class="hover-shadow">
-            <img src="img/extras/project-1-details4.png" alt="" onclick="openModal();currentSlide(5)" class="hover-shadow">
+            <img src="img/extras/project-1-details1.png" onclick="openModal();currentSlide(2)" alt="" class="hover-shadow">
+            <img src="img/extras/project-1-details2.png" onclick="openModal();currentSlide(3)" alt="" class="hover-shadow">
+            <img src="img/extras/project-1-details3.png" onclick="openModal();currentSlide(4)" alt="" class="hover-shadow">
+            <img src="img/extras/project-1-details4.png" onclick="openModal();currentSlide(5)" alt="" class="hover-shadow">
         </div>
         <div class="wrapper-nxtprv">
             <button class="button-nxtprv" onclick="window.location.href='project-6.html'">&#10094; previous</button>
             <button class="button-nxtprv" onclick="window.location.href='project-2.html'">next &#10095;</button>
         </div>
-
+ 
     </section>
 
-    <!-- Modal/Lightbox -->
-    <div id="myModal" class="modal">
+
+    <div id="modal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="modal-content">
-            <div class="mySlides">
+            <div class="slides">
                 <div class="numbertext">1 / 5</div>
                 <img src="./img/project-1.jpg" style="width:100%">
             </div>
-    
-            <div class="mySlides">
+            <div class="slides">
                 <div class="numbertext">2 / 5</div>
                 <img src="./img/extras/project-1-details1.png" style="width:100%">
             </div>
-    
-            <div class="mySlides">
+            <div class="slides">
                 <div class="numbertext">3 / 5</div>
                 <img src="./img/extras/project-1-details2.png" style="width:100%">
             </div>
-    
-            <div class="mySlides">
+            <div class="slides">
                 <div class="numbertext">4 / 5</div>
                 <img src="./img/extras/project-1-details3.png" style="width:100%">
             </div>
-    
-            <div class="mySlides">
+            <div class="slides">
                 <div class="numbertext">5 / 5</div>
                 <img src="./img/extras/project-1-details4.png" style="width:100%">
             </div>
-    
-            <!-- Next/previous controls -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
         </div>
-    </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div> 
+
+
+
+
+
+
 
     <footer>
         <div class="wrapper-footer">
@@ -106,7 +105,7 @@
             <div class="index-footer">
                 <h3>Site map</h3>
                 <a href="index.html">Home</a>
-                <a href="index.html#portfolio">Cases</a>
+                <a href="index.html#featured">Cases</a>
                 <a href="index.html#about">About</a>
                 <a href="contact.html">Contact</a>
             </div>
@@ -135,6 +134,6 @@
 
 <script>src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="js/app.js" defer></script>
+<script defer src="js/lightbox.js"></script>
 
 </html>

@@ -1,4 +1,93 @@
-//hamburger menu script
+// Testimonials
+
+// Array
+const reviews = [
+  {
+    id: 1,
+    name: "susan smith",
+    job: "marketing, Awesome corp",
+    img:
+      "https://source.unsplash.com/eJ0UGX8da2c/300",
+    text:
+      "De som jag har kontakt med på CAGELAKEISLAND kan sin sak, och det märks i varje interaktion vi har med dem. Kommer fortsätta använda deras tjänst ett bra tag framöver.",
+  },
+  {
+    id: 2,
+    name: "anna johnson",
+    job: "partner, Best company AB",
+    img:
+      "https://source.unsplash.com/mEZ3PoFGs_k/300",
+    text:
+      "CAGELAKEISLAND webbyrå har utvecklat vår webbsida i WordPress. Samarbetat har fungerat väldigt bra under alla år och framförallt uppskattar vi deras snabba respons kring vidareutveckling och support.",
+  },
+  {
+    id: 3,
+    name: "peter jones",
+    job: "CEO, we are the best inc.",
+    img:
+      "https://source.unsplash.com/uXB-7la5vqA/300",
+    text:
+      "CAGELAKEISLAND hjälpte oss med en ny snyggare webbplats med bättre och enklare flöden för besökaren. Det hade inte varit möjligt att nå våra mål utan att ha skapat den nya sajten med dem.",
+  },
+  {
+    id: 4,
+    name: "bill anderson",
+    job: "hr, company ltd.",
+    img:
+      "https://source.unsplash.com/jCeVRUQslTs/300",
+    text:
+      "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
+  },
+];
+
+const img = document.getElementById('person-img');
+const author = document.getElementById('author');
+const job = document.getElementById('job');
+const info = document.getElementById('info');
+
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+const randomBtn = document.querySelector('.random-btn');
+
+let currentItem = 0;
+
+window.addEventListener("DOMContentLoaded", function() {
+  showPerson(currentItem);
+});
+
+function showPerson(person) {
+  const item = reviews[person];
+  img.src = item.img;
+  author.textContent = item.name;
+  job.textContent = item.job;
+  info.textContent = item.text;
+}
+
+nextBtn.addEventListener('click', function(){
+  currentItem++;
+  if (currentItem > reviews.length - 1) {
+    currentItem = 0;
+  }
+  showPerson(currentItem);
+})
+
+prevBtn.addEventListener('click', function(){
+  currentItem--;
+  if (currentItem < 0) {
+    currentItem = reviews.length - 1;;
+  }
+  showPerson(currentItem);
+})
+
+randomBtn.addEventListener('click', function(){
+  currentItem = Math.floor(Math.random() * reviews.length);
+  showPerson(currentItem);
+})
+
+
+
+
+//Hamburger menu script
 
 const siteNav = document.querySelector('.site-nav');
 const navToggle = document.querySelector('.mobile-nav-toggle');
@@ -13,91 +102,3 @@ navToggle.addEventListener('click', () => {
         navToggle.setAttribute('aria-expanded', false);
     }
 })
-
-
-
-
-//Contact form validation
-
-const contactForm = document.getElementById('contact');
-console.log(contactForm);
-
-contactForm.addEventListener('submit', function(e) {
-    //alert('Form submitted');
-    // preventDefault() prevents the default behavior of the submitted form
-    e.preventDefault();
-
-    const inputEmail = document.getElementById('input-email');
-    const inputMessage = document.getElementById('input-message');
-    console.log(inputEmail.value);
-
-    let errorMessages = '';
-    if (inputEmail.value === '') {
-        errorMessages += 'Email is required<br>';
-    }
-
-    if (inputMessage.value === '') {
-        errorMessages += 'Message is required<br>';
-    }
-
-    let submittedMessage = 'Form submitted, thank you for contacting me!'
-
-    if (errorMessages) {
-    document.getElementById('messages').innerHTML = errorMessages;
-    document.getElementById('messages').style.backgroundColor = 'rgba(255, 0, 0, 0.1)';
-    document.getElementById('messages').style.border = '1px solid #c4c4c4';
-    //document.getElementById('messages').style.border = '1px solid black';
-} else {
-        document.getElementById('messages').innerHTML = submittedMessage;
-        document.getElementById('messages').style.backgroundColor = 'rgba(0, 255, 0, 0.1)';
-        document.getElementById('messages').style.border = '1px solid #c4c4c4';
-    }
-
-    console.log(errorMessages);
-});
-
-
-
-
-
-
-// Open the Modal
-function openModal() {
-    document.getElementById("myModal").style.display = "block";
-  }
-  
-  // Close the Modal
-  function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-  }
-  
-  var slideIndex = 1;
-  showSlides(slideIndex);
-  
-  // Next/previous controls
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
-  // Thumbnail image controls
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
-  }

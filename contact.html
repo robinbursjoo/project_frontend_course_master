@@ -22,8 +22,8 @@
             <nav>
                 <ul class="site-nav" data-visible="false">
                     <li><a href="index.html">home</a></li>
-                    <li><a href="index.html#portfolio">cases</a></li>
-                    <li><a href="index.html#about">about</a></li>
+                    <li><a href="index.html#featured">cases</a></li>
+                    <li><a href="index.html#about" onclick="">about</a></li>
                     <li><a href="contact.html">contact</a></li>
                 </ul>
             </nav>
@@ -43,7 +43,7 @@
         <div class="contact-right">
             <div id="messages"></div>
 
-            <form action="mailto:robin.bursjoo@gmail.com" method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
+            <form id="contact-form">
                 <label for="inputEmail" class="form-label">Email <span class="required">*</span></label>
                 <input type="email" name="email" id="input-email">
                 
@@ -72,7 +72,7 @@
             <div class="index-footer">
                 <h3>Site map</h3>
                 <a href="index.html">Home</a>
-                <a href="index.html#portfolio">Cases</a>
+                <a href="index.html#featured">Cases</a>
                 <a href="index.html#about">About</a>
                 <a href="contact.html">Contact</a>
             </div>
@@ -101,6 +101,6 @@
 
 <script>src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="js/app.js" defer></script>
+<script src="js/contact.js" defer></script>
 
 </html>

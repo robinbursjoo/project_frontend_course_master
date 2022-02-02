@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAGELAKEISLAND</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
             <nav>
                 <ul class="site-nav" data-visible="false">
                     <li><a href="index.html">home</a></li>
-                    <li><a href="#portfolio">cases</a></li>
+                    <li><a href="#featured">cases</a></li>
                     <li><a href="#about">about</a></li>
                     <li><a href="contact.html">contact</a></li>
                 </ul>
@@ -39,8 +40,8 @@
             <p class="herop">CAGELAKEISLAND is the web design studio of Robin Bursjöö focused on 3D illustration, UI design and branding.
             </p>
         </div>
-        <button class="hero-cta" onclick="location.href='#featured'">Scroll down <img
-                src="/img/chevron-down-solid-white.svg" alt=""> </button>
+        <button class="hero-cta" onclick="location.href='#featured'">scroll down <img
+                src="img/chevron-down-solid-white.svg" alt="scroll down arrow"> </button>
     </section>
 
     <section id="featured">
@@ -74,7 +75,7 @@
                 </a>
                 <div class="overlay-container">
                     <div class="topleft topleft-white">Plane</div>
-                    <p>Show case</p>
+                    <p>This is a stylized plane for a project to get better at modelling and materials. <br> <span class="span-p">Click for more info.</span></p>
                 </div>
             </div>
             <div class="case-container">
@@ -83,7 +84,7 @@
                 </a>
                 <div class="overlay-container">
                     <div class="topleft topleft-white">Ferrari</div>
-                    <p>Show case</p>
+                    <p>This was a fun project to understand curves and advanced shapes to achieve realism. <br> <span class="span-p">Click for more info.</span></p>
                 </div>
             </div>
             <div class="case-container">
@@ -92,7 +93,7 @@
                 </a>
                 <div class="overlay-container">
                     <div class="topleft topleft-white">Stillsamhetens Spa</div>
-                    <p>Show case</p>
+                    <p>Branding project for a Swedish spa. Logo and webpage. <br> <span class="span-p">Click for more info.</span></p>
                 </div>
             </div>
             <div class="case-container">
@@ -101,7 +102,7 @@
                 </a>
                 <div class="overlay-container">
                     <div class="topleft topleft-white">Modern kitchen</div>
-                    <p>Show case</p>
+                    <p>Revisited project from 2012 to visualize a modern kitchen. <br> <span class="span-p">Click for more info.</span></p>
                 </div>
             </div>
             <div class="case-container">
@@ -110,7 +111,7 @@
                 </a>
                 <div class="overlay-container">
                     <div class="topleft topleft-white">Boat</div>
-                    <p>Show case</p>
+                    <p>Bimini roof concept for Askeladden Hunter 445. <br> <span class="span-p">Click for more info.</span></p>
                 </div>
             </div>
             <div class="case-container">
@@ -119,7 +120,7 @@
                 </a>
                 <div class="overlay-container">
                     <div class="topleft topleft-white">Space station</div>
-                    <p>Show case</p>
+                    <p>Space renders are cool, this was just a fun project to be cool. <br> <span class="span-p">Click for more info.</span></p>
                 </div>
             </div>
 
@@ -150,6 +151,33 @@
         </div>
     </section>
 
+
+
+
+    <section id="reviews">
+        <h2>Testimonials</h2>
+        <article class="review">
+            <div class="img-container">
+                <img src="" id="person-img" alt="review portrait">
+            </div>
+            <h4 id="author"></h4>
+            <p id="job"></p>
+            <p id="info"></p>
+            <div class="button-container">
+                <button class="prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <button class="random-btn">random testimonial</button>
+        </article>
+    </section>
+
+
+
+    
     <section id="about">
         <h2>What is CLI?</h2>
         <p>CageLakeIsland is the web studio of Robin Bursjöö, a promising Swedish designer, 3D-visualizer and
@@ -158,9 +186,6 @@
             However, his spectrum is wide: branding, print, digital projects, products, films, animations are just to
             mention
             a few of his interests.
-            <br><br> At his leisure time he enjoys hanging out with friends as well as the occational movie watched or
-            game
-            played when time allows it.
         </p>
         <img src="img/about.jpg" alt="portrait">
     </section>
@@ -175,7 +200,7 @@
             <div class="index-footer">
                 <h3>Site map</h3>
                 <a href="index.html">Home</a>
-                <a href="index.html#portfolio">Cases</a>
+                <a href="index.html#featured">Cases</a>
                 <a href="index.html#about">About</a>
                 <a href="contact.html">Contact</a>
             </div>
@@ -202,7 +227,7 @@
 
 </body>
 
-<script>src = "https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"</script>
+<script>src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/app.js" defer></script>
 

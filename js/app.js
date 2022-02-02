@@ -4,7 +4,7 @@
 const reviews = [
   {
     id: 1,
-    name: "susan smith",
+    name: "susanne sjödin",
     job: "marketing, Awesome corp",
     img:
       "https://source.unsplash.com/eJ0UGX8da2c/300",
@@ -13,7 +13,7 @@ const reviews = [
   },
   {
     id: 2,
-    name: "anna johnson",
+    name: "anna johansson",
     job: "partner, Best company AB",
     img:
       "https://source.unsplash.com/mEZ3PoFGs_k/300",
@@ -22,7 +22,7 @@ const reviews = [
   },
   {
     id: 3,
-    name: "peter jones",
+    name: "peter svensson",
     job: "CEO, we are the best inc.",
     img:
       "https://source.unsplash.com/uXB-7la5vqA/300",
@@ -31,7 +31,7 @@ const reviews = [
   },
   {
     id: 4,
-    name: "bill anderson",
+    name: "bill andersson",
     job: "hr, company ltd.",
     img:
       "https://source.unsplash.com/jCeVRUQslTs/300",

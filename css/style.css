@@ -1180,9 +1180,9 @@ footer img {
         to {backdrop-filter: blur(1.5rem); background-color: hsl(0 0% 0% / .5)}
     }
    
-    .modal-content img {
+    .modal-content img,
+    .modal-content video {
         border-radius: var(--borderradius);
-        /* outline: 1px solid hsl(0 0% 100% / 0.6); */
         box-shadow: -.5rem 2rem 2rem hsl(0 0% 0% / 0.5);
     }
       
